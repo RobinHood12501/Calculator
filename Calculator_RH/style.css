@@ -1,0 +1,277 @@
+body{
+  background: rgb(207,255,227);
+  background: linear-gradient(130deg, rgba(207,255,227,1) 0%, rgba(245,238,255,1) 100%);
+}
+
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background: transparent;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: transparent;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; 
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.bn31 {
+  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: black;
+  display: block;
+  height: 50px;
+  font-size: 1.4em;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bn31:hover {
+  color: #fff;
+}
+
+.bn31 .bn31span {
+  align-items: center;
+  background: whitesmoke;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn31:hover .bn31span {
+  background: transparent;
+}
+
+h1{
+  top: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  font-family: cursive;
+  font-weight: Bold;
+  padding-left: 50%
+}
+
+.bn312 {
+  background-image: linear-gradient(to right, #006175 1%, #b079ff 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: black;
+  display: block;
+  height: 50px;
+  font-size: 1.4em;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bn312:hover {
+  color: #fff;
+}
+
+.bn312 .bn312span {
+  align-items: center;
+  background: whitesmoke;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn312:hover .bn312span {
+  background: transparent;
+}
+
+.calculator {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calc-container {
+  background-color: #1d1d1d; 
+  backdrop-filter: blur(200px);
+  
+  box-shadow: 20px 22px 9px rgba(92, 90, 90, 0.5);
+  width: 600px;
+  height: auto;
+
+  border-radius: 20px 20px 30px 30px;
+}
+
+.output {
+  width: 100%;
+  ;
+}
+
+.operation {
+  width: 600px;
+  height: 70px;
+
+  color: #878787;
+
+  font-size: 1.9em;
+  font-weight: bold;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.operation .value {
+  position: absolute;
+
+  bottom: 5px;
+  right: 10px;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.result {
+  width: 600px;
+  height: 140px;
+
+  color: #FFF;
+
+  font-size: 2.6em;
+  font-weight: bold;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.result .value {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.input {
+  background: linear-gradient(130deg, rgba(207,255,227,1) 0%, rgba(245,238,255,1) 100%);
+  backdrop-filter: blur(200px);
+  
+  box-shadow: 20px 20px 9px rgba(92, 90, 90, 0.2);
+  border-radius: 0 0 25px 25px;
+  
+  height: 340px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row button {
+  width: 50px;
+  height: 50px;
+
+  font-size: 1.5em;
+
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+
+  margin: 8px;
+
+  cursor: pointer;
+}
+
+.row button:hover {
+  font-weight: bold;
+}
+
+.row #calculate {
+  color: #FFF;
+  background-color: #46e0bc;
+  width: 121px;
+  border-radius: 50px;
+}
+
+.row #delete {
+  color: #FFF;
+  background-color: #e05046;
+}
+
+#division,
+#multiplication,
+#subtraction,
+#addition {
+  color: #18b893;
+}
+
+.input button span {
+  font-size: 0.6em;
+  position: absolute;
+}
+
+.active-angle {
+  background-color: #1d1d1d !important;
+  color: #FFF !important;
+  border-radius: 10px !important;
+}
